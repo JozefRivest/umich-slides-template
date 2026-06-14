@@ -37,7 +37,6 @@ cd umich-slides-template
 git sparse-checkout set beamer
 ```
 
-```{html}
 <table>
 <tr>
   <th align="center">With Michigan footer</th>
@@ -56,7 +55,6 @@ git sparse-checkout set beamer
   <td><img src="img/beamer-clean-3.png"/></td>
 </tr>
 </table>
-```
 
 ![Title slide](img/slide-1.png)
 
