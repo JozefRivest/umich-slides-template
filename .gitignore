@@ -1,13 +1,2 @@
-# Remove aux files from repo
-
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.nav
-*.out
-*.snm
-*.toc
-*.vrb
-*.synctex.gz
-
+reveal/template_files/*
+indent.log
