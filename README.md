@@ -43,8 +43,8 @@ git sparse-checkout set beamer
   <th align="center">Without footer</th>
 </tr>
 <tr>
-  <td><img src="img/title-beamer.png" width="70%"/></td>
-  <td><img src="img/title-beamer.png" width="70%"/></td>
+  <td><img src="img/title-beamer.png" width="100%"/></td>
+  <td><img src="img/title-beamer.png" width="100%"/></td>
 </tr>
 <tr>
   <td><img src="img/beamer-2.png" width="100%"/></td>
