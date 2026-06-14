@@ -89,7 +89,24 @@ presentation to create figures and tables. You can also source `R` scripts so
 you can insert only the object created for a plot into your `presentation.qmd`
 file.
 
-![Example Reveal](img/reveal-slides.png)
+<table>
+<tr>
+  <th align="center">With Michigan footer</th>
+  <th align="center">Without footer</th>
+</tr>
+<tr>
+  <td><img src="img/reveal-1.png" width="100%"/></td>
+  <td><img src="img/reveal-clean-1.png" width="100%"/></td>
+</tr>
+<tr>
+  <td><img src="img/reveal-2.png" width="100%"/></td>
+  <td><img src="img/reveal-clean-2.png" width="100%"/></td>
+</tr>
+<tr>
+  <td><img src="img/reveal-3.png" width="100%"/></td>
+  <td><img src="img/reveal-clean-3.png" width="100%"/></td>
+</tr>
+</table>
 
 ### Usage
 
