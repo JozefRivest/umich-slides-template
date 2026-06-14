@@ -11,7 +11,7 @@ also based on Grant McDermott and Kyle Butt's clean theme.
 
 ## Use
 
-You can copy the `beamerthemeumich.sty` and the `presentation.tex` files into 
-Overleaf or into you local directory. You need both if you want to have the 
-same output.
+You can copy the `beamerthemeumich.sty`, or the `verycleantheme.sty`
+and the `presentation.tex` files into Overleaf or into you local
+directory. You need both if you want to have the same output.
 
