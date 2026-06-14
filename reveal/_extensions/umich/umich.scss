@@ -261,7 +261,7 @@ img.slide-logo {
   position: fixed;
   background: linear-gradient(to right, #00274C 0%, #00274C 50%, #FFCB05 50%, #FFCB05 100%);
   width: 100%;
-  height: 70px;
+  height: 40px;
   bottom: 0 !important;
   left: 0;
   margin: 0;
@@ -269,29 +269,29 @@ img.slide-logo {
   z-index: 1;
   display: flex;
   align-items: center;
-  font-size: 0.9em;
+  font-size: 0.5em;
 }
 
 .footer::before {
   content: var(--footer-left-text, "Department");
-  font-size: 23pt;
+  font-size: 15pt;
   color: #FFCB05;
   position: absolute;
   left: 0;
   width: 50%;
   text-align: center;
-  line-height: 60px;
+  line-height: 40px;
 }
 
 .footer::after {
   content: var(--footer-right-text, "Author Name");
-  font-size: 23pt;
+  font-size: 15pt;
   color: #00274C;
   position: absolute;
   right: 0;
   width: 50%;
   text-align: center;
-  line-height: 60px;
+  line-height: 40px;
 }
 
 // Ensure no padding or margin on the reveal container that might cause white space
@@ -303,8 +303,8 @@ img.slide-logo {
 // Also need to enforce slide numbers at bottom-right (if logo is present)
 .slide-number,
 .reveal.has-logo .slide-number {
-  bottom: 4px !important;
-  right: 10px !important;
+  bottom: 30px !important;
+  right: 20px !important;
   top: unset !important;
   color: #00274C !important;
   font-size: 1em !important;
