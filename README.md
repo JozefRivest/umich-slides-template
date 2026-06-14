@@ -1,9 +1,11 @@
 # University of Michigan Slides Templates
 
-These templates were inspired and built from Grant McDermott and Kyle Butt's
-clean theme, published under MIT license. This repository contains a beamer and
-a revealjs template. The following sections describe the different templates 
-and how to download them.
+These templates were inspired and built
+from [Grant McDermott and Kyle Butt's clean
+theme](https://github.com/grantmcdermott/quarto-revealjs-clean), published
+under MIT license. This repository contains a beamer and a revealjs
+template. The following sections describe the different templates and
+how to download them.
 
 ## Prerequisites
 
