@@ -56,12 +56,6 @@ git sparse-checkout set beamer
 </tr>
 </table>
 
-![Title slide](img/slide-1.png)
-
-![Example slide](img/slide-2.png)
-
-![Additional theme classes](img/slide-3.png)
-
 Otherwise, you can copy the `beamerthemeumich.sty`, or the
 `beamerthemeclean.sty` and the `presentation.tex` files into Overleaf or into
 your local directory. You need both if you want to have the same output.
