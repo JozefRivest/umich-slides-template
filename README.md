@@ -37,7 +37,7 @@ cd umich-slides-template
 git sparse-checkout set beamer
 ```
 
-```html
+```{html}
 <table>
 <tr>
   <th align="center">With Michigan footer</th>
