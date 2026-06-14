@@ -1,2 +1,4 @@
 reveal/template_files/*
 indent.log
+beamer/build/*
+!beamer/build/.gitkeep
