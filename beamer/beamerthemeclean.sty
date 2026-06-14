@@ -157,23 +157,8 @@
 % Footline — split navy/gold with department (left) and author (right)
 % Suppressed on the title page (page 1)
 % --------------------------------------------------------------------------
-% \setbeamertemplate{footline}{%
-% 	\ifnum\insertpagenumber=1
-% 		% No footer on title slide
-% 	\else
-% 		\hbox{%
-% 			\begin{beamercolorbox}[%
-% 					wd=0.50\paperwidth, ht=2.5ex, dp=1.5ex, leftskip=0.8em]{footline left}%
-% 				\usebeamerfont{footline}\insertshortinstitute%
-% 			\end{beamercolorbox}%
-% 			\begin{beamercolorbox}[%
-% 					wd=0.50\paperwidth, ht=2.5ex, dp=1.5ex, leftskip=0.8em, rightskip=0.8em]{footline right}%
-% 				\usebeamerfont{footline}\insertshortauthor\hfill\insertframenumber/\inserttotalframenumber%
-% 			\end{beamercolorbox}%
-% 		}%
-% 	\fi
-% }
-%
+\setbeamertemplate{footline}[frame number]
+
 % --------------------------------------------------------------------------
 % Separation line below frametitle
 % --------------------------------------------------------------------------

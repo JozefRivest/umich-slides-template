@@ -37,6 +37,27 @@ cd umich-slides-template
 git sparse-checkout set beamer
 ```
 
+```html
+<table>
+<tr>
+  <th align="center">With Michigan footer</th>
+  <th align="center">Without footer</th>
+</tr>
+<tr>
+  <td><img src="img/beamer-1.png"/></td>
+  <td><img src="img/beamer-clean-1.png"/></td>
+</tr>
+<tr>
+  <td><img src="img/beamer-2.png"/></td>
+  <td><img src="img/beamer-clean-2.png"/></td>
+</tr>
+<tr>
+  <td><img src="img/beamer-3.png"/></td>
+  <td><img src="img/beamer-clean-3.png"/></td>
+</tr>
+</table>
+```
+
 ![Title slide](img/slide-1.png)
 
 ![Example slide](img/slide-2.png)
@@ -70,7 +91,7 @@ presentation to create figures and tables. You can also source `R` scripts so
 you can insert only the object created for a plot into your `presentation.qmd`
 file.
 
-[![](reveal/clean-title.png "live demo")](https://jozefrivest.com/umich-quarto-reveal-demo/index.html)
+![Example Reveal](img/reveal-slides.png)
 
 ### Usage
 

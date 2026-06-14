@@ -1,11 +1,11 @@
 ---
 title: Title
 subtitle: Subtitle
-format: umich-revealjs   # Use umich-clean-revealjs to remove the Michigan colored footer
+format: umich-revealjs # Use umich-clean-revealjs to remove the Michigan colored footer
 author:
   - name: Author Name
     orcid: 0000-0000-0000-0000
-    email: "email@umich.com"
+    email: "`email@umich.com`"
     affiliations: "Department of [insert], University of Michigan"
 date: last-modified
 ---
@@ -62,5 +62,13 @@ Cross-references
 ## Want to use it?
 
 ```bash
-quarto use template JozefRivest/umich-quarto-reveal
+npx degit JozefRivest/umich-slides-template/reveal
+```
+
+or
+
+```bash
+git clone --filter=blob:none --sparse https://github.com/JozefRivest/umich-slides-template.git
+cd umich-slides-template
+git sparse-checkout set reveal
 ```
