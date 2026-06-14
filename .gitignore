@@ -1,13 +1,13 @@
-# Ignore everything by default
-*
+# Remove aux files from repo
 
-# Keep source and output files
-!.gitignore
-!beamerthemeumich.sty
-!verycleantheme.sty
-!presentation.tex
-!presentation.pdf
-!.latexmkrc
-!README.md
-!img/
-!img/*.png
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.synctex.gz
+

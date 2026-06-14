@@ -1,0 +1,189 @@
+%% beamerthemeumich.sty
+%% University of Michigan Beamer Theme
+%% Mirrors the umich-revealjs Quarto theme
+%%
+%% Colors:
+%%   Navy  #00274C — Michigan Blue
+%%   Gold  #FFCB05 — Michigan Maize
+%%   Maroon #9a2515 — secondary accent
+%%   Jet   #131516 — body text
+%%
+%% Requires: roboto, inconsolata, xcolor, hyperref (all standard in TeX Live)
+%% Compile with: pdflatex or lualatex/xelatex
+
+\ProvidesPackage{beamerthemeumich}[2025/01/01 University of Michigan Beamer Theme]
+
+\mode<presentation>
+
+% --------------------------------------------------------------------------
+% Packages
+% --------------------------------------------------------------------------
+\RequirePackage{xcolor}
+\RequirePackage[sfdefault, light]{roboto}   % Roboto Light as main font
+\RequirePackage[T1]{fontenc}
+\RequirePackage{inconsolata}                % Monospace (replaces Menlo)
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{orcidlink}
+
+% --------------------------------------------------------------------------
+% Colors
+% --------------------------------------------------------------------------
+\definecolor{umichNavy}{HTML}{00274C}
+\definecolor{umichGold}{HTML}{FFCB05}
+\definecolor{umichMaroon}{HTML}{9a2515}
+\definecolor{umichJet}{HTML}{131516}
+\definecolor{umichLightNavy}{HTML}{4A6FA5}  % ~navy mixed with white (for sub-bullets)
+
+% --------------------------------------------------------------------------
+% Beamer color assignments
+% --------------------------------------------------------------------------
+\setbeamercolor{normal text}{fg=umichJet, bg=white}
+\setbeamercolor{structure}{fg=umichNavy}
+\setbeamercolor{alerted text}{fg=umichMaroon}
+
+% Title page
+\setbeamercolor{title}{fg=umichJet}
+\setbeamercolor{subtitle}{fg=umichNavy}
+\setbeamercolor{author}{fg=umichJet}
+\setbeamercolor{institute}{fg=umichJet}
+\setbeamercolor{date}{fg=umichJet}
+
+% Frame title / subtitle
+\setbeamercolor{frametitle}{fg=umichNavy, bg=white}
+\setbeamercolor{framesubtitle}{fg=umichNavy}
+
+% Items
+\setbeamercolor{item}{fg=umichNavy}
+\setbeamercolor{subitem}{fg=umichLightNavy}
+\setbeamercolor{subsubitem}{fg=umichLightNavy}
+
+% Blocks
+\setbeamercolor{block title}{fg=white, bg=umichNavy}
+\setbeamercolor{block body}{fg=umichJet, bg=umichNavy!10!white}
+\setbeamercolor{block title alerted}{fg=white, bg=umichMaroon}
+\setbeamercolor{block body alerted}{fg=umichJet, bg=umichMaroon!10!white}
+\setbeamercolor{block title example}{fg=white, bg=umichNavy!70!black}
+\setbeamercolor{block body example}{fg=umichJet, bg=umichNavy!5!white}
+
+% Footline color boxes (must be named for use in footline template)
+\setbeamercolor{footline left}{fg=umichGold, bg=umichNavy}
+\setbeamercolor{footline right}{fg=umichNavy, bg=umichGold}
+
+% Hyperlinks
+\hypersetup{colorlinks=true, linkcolor=umichNavy, urlcolor=umichNavy, citecolor=umichNavy}
+
+% --------------------------------------------------------------------------
+% Fonts
+% --------------------------------------------------------------------------
+\usefonttheme{professionalfonts}
+
+\setbeamerfont{title}{size=\Large, series=\mdseries}
+\setbeamerfont{subtitle}{size=\normalsize, shape=\itshape, series=\mdseries}
+\setbeamerfont{author}{size=\small, series=\mdseries}
+\setbeamerfont{institute}{size=\small, series=\mdseries}
+\setbeamerfont{date}{size=\small, series=\mdseries}
+
+\setbeamerfont{frametitle}{size=\large, series=\mdseries}
+\setbeamerfont{framesubtitle}{size=\normalsize, shape=\itshape, series=\mdseries}
+
+\setbeamerfont{footline}{size=\scriptsize, series=\mdseries}
+\setbeamerfont{block title}{size=\normalsize, series=\bfseries}
+
+% --------------------------------------------------------------------------
+% Navigation symbols — hide
+% --------------------------------------------------------------------------
+\setbeamertemplate{navigation symbols}{}
+
+% --------------------------------------------------------------------------
+% Item symbols
+% --------------------------------------------------------------------------
+\setbeamertemplate{itemize item}{%
+	\textcolor{umichNavy}{\textbullet}}
+\setbeamertemplate{itemize subitem}{%
+	\textcolor{umichLightNavy}{$\rightarrow$}}
+\setbeamertemplate{itemize subsubitem}{%
+	\textcolor{umichLightNavy}{--}}
+
+% --------------------------------------------------------------------------
+% Headline — empty
+% --------------------------------------------------------------------------
+\setbeamertemplate{headline}{}
+
+% --------------------------------------------------------------------------
+% ORCID — optional: use \orcid{0000-0000-0000-0000} inline anywhere
+% --------------------------------------------------------------------------
+\newcommand{\orcid}[1]{\orcidlink{#1}}
+
+% --------------------------------------------------------------------------
+% Title page
+% --------------------------------------------------------------------------
+\setbeamertemplate{title page}{%
+	\vspace{2.5em}
+	\begin{beamercolorbox}[leftskip=0pt, sep=0pt]{title}
+		{\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+	\end{beamercolorbox}
+	\vspace{0.4em}
+	\begin{beamercolorbox}[leftskip=0pt, sep=0pt]{subtitle}
+		{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+	\end{beamercolorbox}
+	\vspace{1.2em}
+	\begin{beamercolorbox}[leftskip=0pt, sep=0pt]{author}
+		{\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
+	\end{beamercolorbox}
+	\vspace{0.3em}
+	\begin{beamercolorbox}[leftskip=0pt, sep=0pt]{institute}
+		{\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}
+	\end{beamercolorbox}
+	\vspace{0.3em}
+	\begin{beamercolorbox}[leftskip=0pt, sep=0pt]{date}
+		{\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}
+	\end{beamercolorbox}
+}
+
+% --------------------------------------------------------------------------
+% Frame title
+% --------------------------------------------------------------------------
+\setbeamertemplate{frametitle}{%
+	\vspace{0.4em}
+	{\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle\par}%
+	\ifx\insertframesubtitle\@empty\else
+		\vspace{0.15em}%
+		{\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\par}%
+	\fi
+}
+
+% --------------------------------------------------------------------------
+% Footline — split navy/gold with department (left) and author (right)
+% Suppressed on the title page (page 1)
+% --------------------------------------------------------------------------
+\setbeamertemplate{footline}{%
+	\ifnum\insertpagenumber=1
+		% No footer on title slide
+	\else
+		\hbox{%
+			\begin{beamercolorbox}[%
+					wd=0.50\paperwidth, ht=2.5ex, dp=1.5ex, leftskip=0.8em]{footline left}%
+				\usebeamerfont{footline}\insertshortinstitute%
+			\end{beamercolorbox}%
+			\begin{beamercolorbox}[%
+					wd=0.50\paperwidth, ht=2.5ex, dp=1.5ex, leftskip=0.8em, rightskip=0.8em]{footline right}%
+				\usebeamerfont{footline}\insertshortauthor\hfill\insertframenumber/\inserttotalframenumber%
+			\end{beamercolorbox}%
+		}%
+	\fi
+}
+
+% --------------------------------------------------------------------------
+% Separation line below frametitle
+% --------------------------------------------------------------------------
+\setbeamertemplate{frametitle continuation}{}
+
+% Draw a thin navy rule below the frametitle area
+\addtobeamertemplate{frametitle}{}{%
+	\vspace{0.3em}%
+	{\color{umichNavy}\hrule height 0.4pt}%
+	\vspace{0.3em}%
+}
+
+\mode<all>
