@@ -1,7 +1,7 @@
 ---
 title: Title
 subtitle: Subtitle
-format: umich-revealjs
+format: umich-revealjs   # Use umich-clean-revealjs to remove the Michigan colored footer
 author:
   - name: Author Name
     orcid: 0000-0000-0000-0000
