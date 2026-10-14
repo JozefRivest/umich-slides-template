@@ -1,0 +1,99 @@
+%% presentation.tex
+%% Beamer version of the umich-revealjs Quarto presentation
+%%
+%% Compile with:
+%%   pdflatex presentation.tex   (two passes for cross-references)
+%% or
+%%   lualatex  presentation.tex  (if you want fontspec/Roboto)
+%%
+%% The beamerthemeumich.sty file must be in the same directory.
+
+\documentclass[aspectratio=169, 12pt]{beamer}
+
+\usetheme{umich}
+
+% Short forms appear in the footline
+\title{Title of your presentation}
+\subtitle{Subtitle of your presentation}
+
+\author[Name]{%
+  Name \orcid{0000-0000-0000-0000} \\  % optional — remove \orcid to omit ORCID icon
+  \texttt{\footnotesize johndoe@umich.edu}}
+
+
+  \institute[University of Michigan]{%
+Department of political science, University of Michigan}
+
+\date{\today}
+
+% --------------------------------------------------------------------------
+% Extra packages for content
+% --------------------------------------------------------------------------
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  backgroundcolor=\color{umichNavy!8!white},
+  frame=single,
+  framerule=0.4pt,
+  rulecolor=\color{umichNavy!40!white},
+  breaklines=true,
+}
+
+% --------------------------------------------------------------------------
+\begin{document}
+
+% ------ Title slide --------------------------------------------------------
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+% ------ Slide 1 ------------------------------------------------------------
+\begin{frame}{Example slide}
+	\framesubtitle{This is a subtitle}
+
+	Here we have some text that may run over several lines of the slide frame,
+	depending on how long it is.
+
+	\begin{itemize}
+		\item first item
+		      \begin{itemize}
+			      \item A sub item
+		      \end{itemize}
+	\end{itemize}
+
+	\medskip
+	Next, we'll briefly review some theme-specific components.
+
+	\begin{itemize}
+		\item Note that \textit{all} of the standard Beamer features can be used
+		      with this theme, even if we don't highlight them here.
+	\end{itemize}
+\end{frame}
+
+% ------ Slide 2 ------------------------------------------------------------
+\begin{frame}{Additional theme classes}
+	\framesubtitle{Some extra things you can do with the clean theme}
+
+	Special classes for emphasis
+
+	\begin{itemize}
+		\item \alert{important note} — \texttt{\textbackslash alert\{\}} for
+		      default emphasis (maroon)
+		\item \textcolor{umichMaroon}{custom colour} — via
+		      \texttt{\textbackslash textcolor\{umichMaroon\}\{\}}
+		\item \colorbox{umichMaroon!20}{\textcolor{umichMaroon}{highlighted}} — via
+		      \texttt{\textbackslash colorbox}
+	\end{itemize}
+
+	\medskip
+	Cross-references
+
+	\begin{itemize}
+		\item Use \texttt{\textbackslash hyperlink\{label\}\{text\}} for internal
+		      Beamer links — analogous to the \texttt{.button} class
+	\end{itemize}
+\end{frame}
+
+% ------ Slide 4 ------------------------------------------------------------
+
+\end{document}
